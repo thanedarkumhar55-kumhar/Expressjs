@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the developer">
+    <title>Contact | Developer Portfolio</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <script src="js/global.js" defer></script>
+    <script src="js/contact.js" defer></script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+
+    <section class="page-hero container">
+
+        <span class="eyebrow">GET IN TOUCH</span>
+
+        <h1>
+            Let's talk about
+            <span class="gradient-text">your idea.</span>
+        </h1>
+
+        <p class="lead">
+            Have a project, question or opportunity?
+            Send a message.
+        </p>
+
+    </section>
+
+    <section class="section container contact-layout">
+
+        <aside class="contact-aside reveal">
+
+            <span class="eyebrow">CONTACT DETAILS</span>
+
+            <h2>
+                Let's create
+                something useful.
+            </h2>
+
+            <p class="muted">
+                Replace the details below with your
+                real contact information.
+            </p>
+
+            <a class="contact-detail"
+               href="mailto:your.email@example.com">
+
+                <span>✉</span>
+
+                <div>
+                    <small>EMAIL</small>
+                    <b data-profile="email">
+                        your.email@example.com
+                    </b>
+                </div>
+
+            </a>
+
+            <a class="contact-detail"
+               data-social="github"
+               href="https://github.com/"
+               target="_blank"
+               rel="noreferrer">
+
+                <span>⌘</span>
+
+                <div>
+                    <small>GITHUB</small>
+                    <b>github.com/yourusername</b>
+                </div>
+
+            </a>
+
+            <a class="contact-detail"
+               data-social="linkedin"
+               href="https://linkedin.com/"
+               target="_blank"
+               rel="noreferrer">
+
+                <span>in</span>
+
+                <div>
+                    <small>LINKEDIN</small>
+                    <b>linkedin.com/in/yourusername</b>
+                </div>
+
+            </a>
+
+            <div class="contact-detail">
+
+                <span>⌖</span>
+
+                <div>
+                    <small>LOCATION</small>
+                    <b data-profile="location">
+                        Your City, Country
+                    </b>
+                </div>
+
+            </div>
+
+            <a class="btn btn-ghost whatsapp-link"
+               href="https://wa.me/910000000000"
+               target="_blank"
+               rel="noreferrer">
+
+                Message on WhatsApp ↗
+
+            </a>
+
+        </aside>
+
+        <!-- Contact Form -->
+        <form class="contact-form reveal"
+              id="contact-form"
+              novalidate>
+
+            <div class="form-heading">
+
+                <h2>Send a Message</h2>
+
+                <p class="muted">
+                    Fields marked * are required.
+                </p>
+
+            </div>
+
+            <div class="form-row">
+
+                <label for="name">Full Name *</label>
+
+                <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    maxlength="80"
+                    required
+                    placeholder="Your full name"
+                >
+
+                <small class="field-error" id="name-error"></small>
+
+            </div>
+
+            <div class="form-row">
+
+                <label for="email">Email Address *</label>
+
+                <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    maxlength="120"
+                    required
+                    placeholder="you@example.com"
+                >
+
+                <small class="field-error" id="email-error"></small>
+
+            </div>
+
+            <div class="form-row">
+
+                <label for="subject">Subject *</label>
+
+                <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    maxlength="120"
+                    required
+                    placeholder="What would you like to discuss?"
+                >
+
+                <small class="field-error" id="subject-error"></small>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="label-line">
+
+                    <label for="message">Message *</label>
+
+                    <small id="message-count">0 / 1000</small>
+
+                </div>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    minlength="20"
+                    maxlength="1000"
+                    required
+                    placeholder="Tell me about your idea..."
+                ></textarea>
+
+                <small class="field-error" id="message-error"></small>
+
+            </div>
+
+            <button class="btn btn-primary submit-btn"
+                    type="submit">
+
+                <span class="submit-label">
+                    Send Message ↗
+                </span>
+
+                <span class="submit-loading" hidden>
+                    Validating...
+                </span>
+
+            </button>
+
+            <p class="form-status"
+               id="form-status"
+               role="status"
+               aria-live="polite">
+            </p>
+
+            <p class="form-note">
+                Demo form: this website currently validates
+                your message in the browser only. It does
+                not send or store email.
+            </p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+</body>
+</html>

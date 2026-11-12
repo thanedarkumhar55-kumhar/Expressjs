@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Developer work gallery">
+    <title>Gallery | Developer Portfolio</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/gallery.css">
+
+    <script src="js/global.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+</head>
+<body>
+
+<div id="site-header"></div>
+
+<main>
+
+    <section class="page-hero container">
+        <span class="eyebrow">BEHIND THE SCENES</span>
+
+        <h1>
+            Work in
+            <span class="gradient-text">frames.</span>
+        </h1>
+
+        <p class="lead">
+            Screenshots, learning milestones, certificates
+            and moments from the journey.
+        </p>
+    </section>
+
+    <section class="section container">
+
+        <div class="filter-bar">
+
+            <button class="filter-btn active"
+                    data-filter="all"
+                    aria-pressed="true">
+                All
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="projects"
+                    aria-pressed="false">
+                Projects
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="certificates"
+                    aria-pressed="false">
+                Certificates
+            </button>
+
+            <button class="filter-btn"
+                    data-filter="activities"
+                    aria-pressed="false">
+                Activities
+            </button>
+
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+
+            <button class="gallery-item tall reveal"
+                    data-category="projects"
+                    data-full="assets/images/gallery/project-1.jpg"
+                    aria-label="Open project screenshot">
+
+                <img src="assets/images/gallery/project-1.jpg"
+                     alt="Project screenshot">
+
+                <span>Project Screenshot</span>
+            </button>
+
+            <button class="gallery-item reveal"
+                    data-category="projects"
+                    data-full="assets/images/gallery/project-2.jpg"
+                    aria-label="Open dashboard image">
+
+                <img src="assets/images/gallery/project-2.jpg"
+                     alt="Analytics dashboard">
+
+                <span>Dashboard Concept</span>
+            </button>
+
+            <button class="gallery-item reveal"
+                    data-category="certificates"
+                    data-full="assets/images/certificates/certificate-1.jpg"
+                    aria-label="Open certificate">
+
+                <img src="assets/images/certificates/certificate-1.jpg"
+                     alt="Developer certificate">
+
+                <span>Certificate</span>
+            </button>
+
+            <button class="gallery-item reveal"
+                    data-category="activities"
+                    data-full="assets/images/gallery/activity-1.jpg"
+                    aria-label="Open activity image">
+
+                <img src="assets/images/gallery/activity-1.jpg"
+                     alt="Technical activity">
+
+                <span>Team Activity</span>
+            </button>
+
+            <button class="gallery-item wide reveal"
+                    data-category="projects"
+                    data-full="assets/images/gallery/project-3.jpg"
+                    aria-label="Open data visualization">
+
+                <img src="assets/images/gallery/project-3.jpg"
+                     alt="Data visualization project">
+
+                <span>Data Visualization</span>
+            </button>
+
+            <button class="gallery-item reveal"
+                    data-category="certificates"
+                    data-full="assets/images/certificates/certificate-2.jpg"
+                    aria-label="Open learning milestone">
+
+                <img src="assets/images/certificates/certificate-2.jpg"
+                     alt="Learning milestone">
+
+                <span>Learning Milestone</span>
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<!-- Image Lightbox -->
+<div class="lightbox"
+     id="lightbox"
+     role="dialog"
+     aria-modal="true"
+     aria-label="Image viewer"
+     aria-hidden="true">
+
+    <button class="lightbox-close"
+            id="lightbox-close"
+            aria-label="Close image viewer">
+        ×
+    </button>
+
+    <button class="lightbox-nav prev"
+            id="lightbox-prev"
+            aria-label="Previous image">
+        ‹
+    </button>
+
+    <figure>
+        <img id="lightbox-image" src="" alt="">
+        <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+
+    <button class="lightbox-nav next"
+            id="lightbox-next"
+            aria-label="Next image">
+        ›
+    </button>
+
+</div>
+
+<div id="site-footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.projects-grid .project-card {
+    transition: opacity 0.2s, transform 0.25s;
+}
+
+.project-card.is-hiding {
+    display: none;
+}
+
+.empty-state {
+    padding: 45px;
+    text-align: center;
+    color: var(--muted);
+
+    border: 1px dashed var(--line);
+    border-radius: var(--radius);
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 620px) {
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}

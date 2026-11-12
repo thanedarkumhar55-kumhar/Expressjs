@@ -1,0 +1,191 @@
+/* Contact Layout */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.contact-aside h2 {
+    font: 600 clamp(2rem, 4vw, 3rem)/1.12 var(--display);
+    margin: 16px 0;
+}
+
+/* Contact Details */
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 24px 0;
+}
+
+.contact-detail > span {
+    width: 44px;
+    height: 44px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--surface);
+    border: 1px solid var(--line);
+
+    border-radius: 12px;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.contact-detail small,
+.contact-detail b {
+    display: block;
+}
+
+.contact-detail small {
+    font-size: 0.65rem;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+}
+
+.contact-detail b {
+    font-size: 0.88rem;
+    overflow-wrap: anywhere;
+}
+
+/* Contact Form */
+
+.contact-form {
+    background: var(--surface);
+
+    border: 1px solid var(--line);
+    padding: 32px;
+
+    border-radius: var(--radius);
+}
+
+.form-heading h2 {
+    font: 600 1.6rem var(--display);
+    margin: 0;
+}
+
+.form-heading p {
+    font-size: 0.85rem;
+    margin: 4px 0 25px;
+}
+
+.form-row {
+    margin-bottom: 18px;
+}
+
+.form-row label {
+    display: block;
+    font-size: 0.84rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid var(--line);
+    border-radius: 9px;
+
+    background: var(--bg);
+    color: var(--text);
+
+    outline: none;
+    resize: vertical;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    border-color: var(--primary);
+
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+.form-row input.invalid,
+.form-row textarea.invalid {
+    border-color: #f87171;
+}
+
+.field-error {
+    display: block;
+    min-height: 18px;
+
+    color: #f87171;
+    font-size: 0.73rem;
+
+    margin-top: 4px;
+}
+
+/* Message Counter */
+
+.label-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label-line small {
+    color: var(--muted);
+    font-size: 0.72rem;
+}
+
+/* Submit Button */
+
+.submit-btn {
+    width: 100%;
+}
+
+.submit-loading[hidden] {
+    display: none;
+}
+
+.form-status {
+    min-height: 22px;
+    font-size: 0.85rem;
+    margin-top: 12px;
+}
+
+.form-status.success {
+    color: #34d399;
+}
+
+.form-status.error {
+    color: #f87171;
+}
+
+.form-note {
+    font-size: 0.72rem;
+    color: var(--muted);
+
+    border-top: 1px solid var(--line);
+
+    padding-top: 15px;
+    margin-top: 16px;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .contact-form {
+        padding: 22px;
+    }
+
+    .contact-detail {
+        margin: 18px 0;
+    }
+}
