@@ -3,21 +3,21 @@
 // ==================================
 
 const PROFILE = {
-  name: "Your Name",
+  name: "Thanedar Kumhar",
 
   intro:
     "I'm a Node.js developer focused on building reliable backend systems, clean APIs and useful digital experiences.",
 
-  email: "your.email@example.com",
+  email: "thanedarkumhar55@gmail.com",
 
-  location: "Your City, Country",
+  location: "Sonari Jamshedpur-835102, India",
 
   socials: {
-    github: "https://github.com/yourusername",
+    github: "https://github.com/thanedarkumhar",
 
-    linkedin: "https://linkedin.com/in/yourusername",
+    linkedin: "https://linkedin.com/in/thanedarkumhar",
 
-    instagram: "https://instagram.com/yourusername",
+    instagram: "https://instagram.com/mr_ryence",
   },
 
   stats: {
@@ -34,18 +34,18 @@ const PROFILE = {
 // ==================================
 
 function renderShell() {
-  const current = location.pathname.split("/").pop() || "index.html";
+  const current = location.pathname.split("/").pop() || "home";
 
   const links = [
-    ["index.html", "Home"],
+    ["/", "Home"],
 
-    ["about.html", "About"],
+    ["/about", "About"],
 
-    ["projects.html", "Projects"],
+    ["/project", "Projects"],
 
-    ["gallery.html", "Gallery"],
+    ["/gallary", "Gallary"],
 
-    ["contact.html", "Contact"],
+    ["/contact", "Contact"],
   ];
 
   const header = document.getElementById("site-header");
@@ -57,7 +57,7 @@ function renderShell() {
 
                 <div class="container nav-wrap">
 
-                    <a class="brand" href="index.html">
+                    <a class="brand" href="/">
 
                         dev<span>.</span>
 
@@ -131,7 +131,7 @@ function renderShell() {
 
                         <div>
 
-                            <a class="brand" href="index.html">
+                            <a class="brand" href="/">
 
                                 dev<span>.</span>
 
@@ -156,13 +156,13 @@ function renderShell() {
 
                             <div class="footer-links">
 
-                                <a href="about.html">About</a>
+                                <a href="/about">About</a>
 
-                                <a href="projects.html">Projects</a>
+                                <a href="/project">Projects</a>
 
-                                <a href="gallery.html">Gallery</a>
+                                <a href="/gallery">Gallery</a>
 
-                                <a href="contact.html">Contact</a>
+                                <a href="/contact">Contact</a>
 
                             </div>
 
