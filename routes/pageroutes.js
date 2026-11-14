@@ -5,7 +5,7 @@ const router=express.Router();
 
 // Home page.
 router.get('/', (req, res)=>{
-res.sendFile(path.join(__dirname, "../public/html/home.html"))  //add path.join ()
+res.sendFile(path.join(__dirname, "../public/html/index.html"))  //add path.join ()
 });
 //About page
 router.get('/about', (req, res)=>{
